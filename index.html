@@ -18,6 +18,9 @@
     <link rel="icon" href="apple-touch-icon.png" />
   </head>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body,
     html {
       height: 100%;
@@ -32,11 +35,13 @@
       color: #fff;
     }
     h1 {
-      font-size: 100px;
+      font-size: 200px;
       font-weight: 100;
     }
+    h6 {
+        font-size: 22px;
+    }
     nav {
-      color: #002be7;
       background-color: #fff;
       opacity: 0.4;
       width: 100%;
@@ -56,17 +61,18 @@
       font-weight: bold;
     }
     header {
-      margin: 100px 0 50px 100px;
+      margin-left: 100px;
+      padding-top: 80px;
     }
     header a {
       text-decoration: none;
-      color: #8A69AA;
+      color: #ba83f1;
     }
     main {
-      padding: 0 40px;
+      padding: 40px;
     }
     p {
-      font-size: 14px;
+      font-size: 20px;
     }
     .btn {
       color: #fff;
@@ -126,12 +132,13 @@
       <h1>euphoria</h1>
       <h6>2 SEASONS | 16 EPISODES | TV-MA | DRAMA</h6>
       <p>
-        ⭐️⭐️⭐️⭐️ <a href="#" class="ms-3">Rating: 8.3/10 · 229,688 votes</a>
+        ⭐️⭐️⭐️⭐️
+        <a href="#" class="rating">Rating: 8.3/10 · 229,688 votes</a>
       </p>
     </header>
     <main>
       <div class="row justify-content-between ms-5">
-        <div class="col-sm-4">
+        <div class="col-sm-5">
           <p class="mb-5">
             A show that portrays the struggles and challenges of adolescence
             with honesty and compassion. It follows the journey of Rue, a drug
@@ -142,7 +149,7 @@
             stories inspire us to never give up on our dreams, to persevere
             through tough times, and to find hope even in the darkest moments.
           </p>
-          <button type="button" class="btn">Watch with MAX</button>
+          <button type="button" class="btn">Watch on MAX</button>
           <button type="button" class="btn">+ Add to watchlist</button>
         </div>
         <div class="col-md-6 video-embeds">
@@ -153,6 +160,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
             class="rounded me-3"
+            width="100%"
           ></iframe>
           <iframe
             src="https://www.youtube.com/embed/3hvEq9fGys8?si=an79W-2kjUkBBSkh"
@@ -161,18 +169,15 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
             class="rounded"
+            width="100%"
           ></iframe>
         </div>
       </div>
       <div class="row justify-content-between ms-5">
-        <div class="col-sm-6 mt-5">
-
-        </div>
-          <div class="col-md-4 mt-5 video-embeds"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6N22FZs2ZhPBYi3b9XPajV?utm_source=generator" width="100%" height="152" class="me-3" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/10hMM5nsZQf66ldBlgWBfG?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
-        </div>
+        <div class="col-sm-6 mt-5"></div>
+        <div class="col-md-4 mt-5"></div>
       </div>
     </main>
-    <footer></footer>
     <script></script>
   </body>
 </html>
