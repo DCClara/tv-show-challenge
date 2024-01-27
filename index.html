@@ -27,7 +27,6 @@
     }
     body {
       overflow-x: hidden !important;
-
       background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/761/original/euphoria.jpg?1705966857);
       background-repeat: no-repeat;
       background-size: cover;
@@ -37,9 +36,6 @@
     h1 {
       font-size: 200px;
       font-weight: 100;
-    }
-    h6 {
-        font-size: 22px;
     }
     nav {
       background-color: #fff;
@@ -60,19 +56,31 @@
       transform: scale(1.1);
       font-weight: bold;
     }
+    a.rating-link,
+    a.creator-link {
+      color: #ba83f1;
+      text-decoration: none;
+    }
+    a.creator-link {
+      text-transform: none;
+    }
     header {
-      margin-left: 100px;
-      padding-top: 80px;
+      margin-left: 30px;
+      padding-top: 60px;
     }
     header a {
       text-decoration: none;
       color: #ba83f1;
     }
-    main {
-      padding: 40px;
+    section {
+      padding: 0 46px;
     }
     p {
-      font-size: 20px;
+      font-size: 18px;
+    }
+    iframe {
+      width: 80%;
+      height: 200px;
     }
     .btn {
       color: #fff;
@@ -80,8 +88,7 @@
       margin-right: 40px;
     }
     .video-embeds {
-      display: flex;
-      justify-content: end;
+      margin-top: 200px;
     }
   </style>
   <body>
@@ -128,39 +135,62 @@
         </div>
       </div>
     </nav>
-    <header>
-      <h1>euphoria</h1>
-      <h6>2 SEASONS | 16 EPISODES | TV-MA | DRAMA</h6>
-      <p>
-        ⭐️⭐️⭐️⭐️
-        <a href="#" class="rating">Rating: 8.3/10 · 229,688 votes</a>
-      </p>
-    </header>
-    <main>
-      <div class="row justify-content-between ms-5">
-        <div class="col-sm-5">
-          <p class="mb-5">
-            A show that portrays the struggles and challenges of adolescence
-            with honesty and compassion. It follows the journey of Rue, a drug
-            addict who is trying to find her way back to sobriety. Along the
-            way, Rue and her circle of friends, including Jules, Nate, Chris,
-            Cassie, and Kat, are faced with various difficulties, but they all
-            strive to overcome them with courage and determination. Their
-            stories inspire us to never give up on our dreams, to persevere
-            through tough times, and to find hope even in the darkest moments.
-          </p>
-          <button type="button" class="btn">Watch on MAX</button>
-          <button type="button" class="btn">+ Add to watchlist</button>
-        </div>
-        <div class="col-md-6 video-embeds">
+    <section class="row d-flex justify-content-between ms-5">
+      <div class="col-sm-6">
+        <header>
+          <h1>euphoria</h1>
+        </header>
+        <h4>2 SEASONS | 16 EPISODES | TV-MA | DRAMA</h4>
+        <h6>WINNER OF 9 EMMYS | RENEWED FOR SEASON 3</h6>
+        <p>
+          ⭐️⭐️⭐️⭐️
+          <a
+            href="https://www.google.com/search?q=hbo+euphoria&oq=&gs_lcrp=EgZjaHJvbWUqCQgBEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQkyMTYxajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8#ip=1&wptab=s:H4sIAAAAAAAAAOMwe8Rowy3w8sc9YSnjSWtOXmPU5eILKMrPSk0uCUoty0wtLxaS5mJzzSvJLKkUEpTi5-LVT9c3NEwzz06uNDLN5VnEyp9aWpCRX5SZqFAE1gAAfqc2R1MAAAA"
+            target="_blank"
+            class="rating-link"
+            >Rating: 8.3/10 · 229,688 votes</a
+          >
+        </p>
+        <p class="mb-4">
+          A show that portrays the struggles and challenges of adolescence with
+          honesty and compassion. It follows the journey of Rue, a drug addict
+          who is trying to find her way back to sobriety. Along the way, Rue and
+          her circle of friends, including Jules, Nate, Chris, Cassie, and Kat,
+          are faced with various difficulties, but they all strive to overcome
+          them with courage and determination. Their stories inspire us to never
+          give up on our dreams, to persevere through tough times, and to find
+          hope even in the darkest moments. Creator
+          <a
+            href="https://www.imdb.com/name/nm0506094/?ref_=tt_ov_wr"
+            target="_blank"
+            class="creator-link"
+            >Sam Levinson</a
+          >
+        </p>
+        <a
+          href="https://www.max.com/shows/euphoria/4ffd33c9-e0d6-4cd6-bd13-34c266c79be0"
+          target="_blank"
+        >
+          <button type="button" class="btn">Watch on MAX</button></a
+        >
+        <button
+          type="button"
+          class="btn"
+          id="watchlistButton"
+          onclick="addToWatchlist()"
+        >
+          + Add to watchlist
+        </button>
+      </div>
+      <div class="col-md-4 d-flex align-items-end flex-column">
+        <div class="video-embeds d-block">
           <iframe
             src="https://www.youtube.com/embed/teCrVa0J8v4?si=7M_TRtSAHB71UrSz"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
-            class="rounded me-3"
-            width="100%"
+            class="rounded"
           ></iframe>
           <iframe
             src="https://www.youtube.com/embed/3hvEq9fGys8?si=an79W-2kjUkBBSkh"
@@ -169,15 +199,38 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
             class="rounded"
-            width="100%"
           ></iframe>
         </div>
       </div>
-      <div class="row justify-content-between ms-5">
-        <div class="col-sm-6 mt-5"></div>
-        <div class="col-md-4 mt-5"></div>
+    </section>
+    <section class="ms-5 mt-5 ps-5">
+      <h4 class="mb-4">Cast</h4>
+      <div class="cast-container">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/389/original/rue-img.jpeg?1706330820"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/390/original/jules-img.jpeg?1706331572"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/392/original/maddy-img.jpeg?1706331606"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/391/original/cassie-img.jpeg?1706331585"
+          alt=""
+        />
       </div>
-    </main>
-    <script></script>
+    </section>
+    <script>
+      function addToWatchlist() {
+        var button = document.getElementById("watchlistButton");
+        button.disabled = true;
+        button.innerHTML = "Added to watchlist ✓";
+        button.classList.add("disabled");
+      }
+    </script>
   </body>
 </html>
