@@ -27,7 +27,8 @@
     }
     body {
       overflow-x: hidden !important;
-      background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/761/original/euphoria.jpg?1705966857);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+        url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/761/original/euphoria.jpg?1705966857);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -39,7 +40,7 @@
     }
     nav {
       background-color: #fff;
-      opacity: 0.4;
+      opacity: 0.5;
       width: 100%;
     }
     nav img {
@@ -47,6 +48,10 @@
     }
     nav li {
       margin-left: 20px;
+      line-height: 10px;
+    }
+    nav .active {
+      border-bottom: 2px solid #000;
     }
     a {
       text-transform: uppercase;
@@ -58,7 +63,7 @@
     }
     a.rating-link,
     a.creator-link {
-      color: #ba83f1;
+      color: #6782fc;
       text-decoration: none;
     }
     a.creator-link {
@@ -66,10 +71,6 @@
     }
     header {
       padding-top: 60px;
-    }
-    header a {
-      text-decoration: none;
-      color: #ba83f1;
     }
     section {
       padding: 0 46px;
@@ -91,12 +92,12 @@
     }
   </style>
   <body>
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-expand-sm fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/762/original/Screenshot_2024-01-22_at_7.12.40%E2%80%AFPM.png?1705968839"
-            width="50px"
+            width="40px"
             alt=""
         /></a>
         <button
@@ -116,13 +117,10 @@
               <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Series</a>
+              <a class="nav-link active" href="#">Series</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Movies</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Documentaries</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">HBO MAX</a>
